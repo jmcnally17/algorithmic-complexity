@@ -1,0 +1,25 @@
+{
+  "name": "algorithmic-complexity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcnally17/algorithmic-complexity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcnally17/algorithmic-complexity/issues"
+  },
+  "homepage": "https://github.com/jmcnally17/algorithmic-complexity#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "jest": "^28.1.1"
+  }
+}
