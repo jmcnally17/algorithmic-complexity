@@ -27,9 +27,14 @@ describe(last, () => {
   });
 
   describe("for long arrays", () => {
-    it("returns the last element of a long array which is 10", () => {
+    it("returns the last element which is 10", () => {
       const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
       expect(last(array)).toBe(10);
+    });
+
+    it("returns the last element which is 165", () => {
+      const array = [246, 54, 34, 2, 1, 345, 67, 7, 890, 32, 1, 23, 51, 165];
+      expect(last(array)).toBe(165);
     });
   });
 });
