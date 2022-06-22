@@ -3,9 +3,14 @@ const singleTimer = (array, numFunc) => {
 
   for (let i = 0; i < 100; i++) {
     if (numFunc === 1) {
-      let startTime = performance.now();
+      const startTime = performance.now();
       array.reverse();
-      let endTime = performance.now();
+      const endTime = performance.now();
+      cumulative += endTime - startTime;
+    } else if (numFunc === 2) {
+      const startTime = performance.now();
+      array.sort();
+      const endTime = performance.now();
       cumulative += endTime - startTime;
     }
   }
