@@ -1,7 +1,7 @@
 const singleTimer = (array, numFunc) => {
   let cumulative = 0;
 
-  for (let i = 0; i < 1000000; i++) {
+  for (let i = 0; i < 100; i++) {
     if (numFunc === 1) {
       let startTime = performance.now();
       array.reverse();
@@ -9,7 +9,7 @@ const singleTimer = (array, numFunc) => {
       cumulative += endTime - startTime;
     }
   }
-  return cumulative / 1000000;
+  return cumulative / 100;
 };
 
 module.exports = singleTimer;
