@@ -16,7 +16,6 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [
       {
-        label: "last()",
         data: yValues,
         borderColor: "red",
         fill: false,

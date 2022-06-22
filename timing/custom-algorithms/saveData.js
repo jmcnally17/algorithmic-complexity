@@ -1,4 +1,4 @@
-const generateArray = require("./generateArray");
+const generateArray = require("../generateArray");
 const singleTimer = require("./singleTimer");
 
 const saveData = (
