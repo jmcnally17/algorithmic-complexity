@@ -8,10 +8,9 @@ const saveData = (
 ) => {
   const data = [];
   for (let i = 1; i < 21; i++) {
-    const x = 5000 * i;
-    const array = callbackTwo(x);
+    const array = callbackTwo(5000 * i);
     const y = callbackThree(array, callbackOne);
-    data.push({ x: x, y: y });
+    data.push(y);
   }
   return data;
 };
