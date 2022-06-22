@@ -1,6 +1,7 @@
 const generateArray = (length) => {
-  if (length === 1) return [1];
-  return [1, 1];
+  return Array.from({ length: length }, () =>
+    Math.floor(Math.random() * length)
+  );
 };
 
 module.exports = generateArray;
