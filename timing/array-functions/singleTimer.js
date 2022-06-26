@@ -12,6 +12,8 @@ const singleTimer = (array, numFunc) => {
       array.sort((a, b) => a - b);
       const endTime = performance.now();
       cumulative += endTime - startTime;
+    } else {
+      throw "Incorrect number entered for second parameter";
     }
   }
   return cumulative / 100;
