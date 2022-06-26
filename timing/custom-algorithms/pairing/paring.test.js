@@ -6,7 +6,11 @@ describe(pairing, () => {
     expect(pairing([])).toEqual([]);
   });
 
-  it("returns an array of one pairing array of one person for a set of one student", () => {
+  it("returns an array of one student working solo", () => {
     expect(pairing(["John"])).toEqual([["John"]]);
+  });
+
+  it("returns an array of one pair of two students", () => {
+    expect(pairing(["John", "Alex"])).toEqual([["John", "Alex"]]);
   });
 });
