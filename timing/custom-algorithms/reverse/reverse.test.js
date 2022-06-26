@@ -47,5 +47,10 @@ describe(reverse, () => {
       const array = [12, 3, 65, 87, 90, 2, 3, 4, 15, 10];
       expect(reverse(array)).toEqual([10, 15, 4, 3, 2, 90, 87, 65, 3, 12]);
     });
+
+    it("returns the numbers 1 to 9 reversed", () => {
+      const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      expect(reverse(array)).toEqual([9, 8, 7, 6, 5, 4, 3, 2, 1]);
+    });
   });
 });
