@@ -16,5 +16,9 @@ describe(reverse, () => {
     it("returns 2 and 19 swapped around in the array", () => {
       expect(reverse([2, 19])).toEqual([19, 2]);
     });
+
+    it("returns 100 and 34 swapped around in the array", () => {
+      expect(reverse([100, 34])).toEqual([34, 100]);
+    });
   });
 });
