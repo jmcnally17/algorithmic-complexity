@@ -23,12 +23,18 @@ describe(reverse, () => {
   });
 
   describe("for arrays containing three elements", () => {
-    it("returns the array [19, 4, 12] with 19 and 12 swapped around", () => {
+    it("returns the array [19, 4, 12] with 19 and 12 swapped round", () => {
       expect(reverse([19, 4, 12])).toEqual([12, 4, 19]);
     });
 
-    it("returns the array [1, 2, 3] with 1 and 3 swapped around", () => {
+    it("returns the array [1, 2, 3] with 1 and 3 swapped round", () => {
       expect(reverse([1, 2, 3])).toEqual([3, 2, 1]);
+    });
+  });
+
+  describe("for arrays containing four elements", () => {
+    it("returns the array [23, 4, 9, 31] with 23 and 31 swapped round and 4 and 9 swapped round", () => {
+      expect(reverse([23, 4, 9, 31])).toEqual([31, 9, 4, 23]);
     });
   });
 });
