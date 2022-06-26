@@ -1,8 +1,10 @@
 const fibonacci = (num) => {
   let list = [];
-  if (num === 1) list.push(0);
-  if (num === 2) list.push(0, 1);
-  if (num > 2) list.push(0, 1, 1);
+  for (let i = 0; i < num; i++) {
+    if (i === 0) list.push(0);
+    if (i === 1) list.push(1);
+    if (i > 1) list.push(list[list.length - 2] + list[list.length - 1]);
+  }
   return list;
 };
 

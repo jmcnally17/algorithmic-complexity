@@ -17,4 +17,8 @@ describe(fibonacci, () => {
   it("returns the first 3 fibonacci numbers", () => {
     expect(fibonacci(3)).toEqual([0, 1, 1]);
   });
+
+  it("returns the first 6 fibonacci numbers", () => {
+    expect(fibonacci(6)).toEqual([0, 1, 1, 2, 3, 5]);
+  });
 });
