@@ -21,4 +21,10 @@ describe(reverse, () => {
       expect(reverse([100, 34])).toEqual([34, 100]);
     });
   });
+
+  describe("for arrays containing three elements", () => {
+    it("returns the array [19, 4, 12] with 19 and 12 swapped around", () => {
+      expect(reverse([19, 4, 12])).toEqual([12, 4, 19]);
+    });
+  });
 });
