@@ -36,5 +36,9 @@ describe(reverse, () => {
     it("returns the array [23, 4, 9, 31] with 23 and 31 swapped round and 4 and 9 swapped round", () => {
       expect(reverse([23, 4, 9, 31])).toEqual([31, 9, 4, 23]);
     });
+
+    it("returns the array [1, 2, 3, 4] with 1 and 4 swapped round and 2 and 3 swapped round", () => {
+      expect(reverse([1, 2, 3, 4])).toEqual([4, 3, 2, 1]);
+    });
   });
 });
