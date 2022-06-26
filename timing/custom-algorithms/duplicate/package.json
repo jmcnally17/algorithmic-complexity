@@ -1,0 +1,13 @@
+{
+  "name": "duplicate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "duplicate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild ./plotShuffle.js --bundle  --outfile=bundle.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
