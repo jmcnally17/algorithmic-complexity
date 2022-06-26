@@ -9,7 +9,7 @@ const singleTimer = (array, numFunc) => {
       cumulative += endTime - startTime;
     } else if (numFunc === 2) {
       const startTime = performance.now();
-      array.sort();
+      array.sort((a, b) => a - b);
       const endTime = performance.now();
       cumulative += endTime - startTime;
     }
