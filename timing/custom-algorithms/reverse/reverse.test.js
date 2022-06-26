@@ -41,4 +41,11 @@ describe(reverse, () => {
       expect(reverse([1, 2, 3, 4])).toEqual([4, 3, 2, 1]);
     });
   });
+
+  describe("for arrays of many elements", () => {
+    it("returns the array in reverse order", () => {
+      const array = [12, 3, 65, 87, 90, 2, 3, 4, 15, 10];
+      expect(reverse(array)).toEqual([10, 15, 4, 3, 2, 90, 87, 65, 3, 12]);
+    });
+  });
 });
