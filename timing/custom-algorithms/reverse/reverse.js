@@ -1,13 +1,7 @@
 const reverse = (array) => {
-  if (array.length === 2) {
-    const a = array[0];
-    array[0] = array[1];
-    array[1] = a;
-  } else if (array.length === 3) {
-    const a = array[0];
-    array[0] = array[2];
-    array[2] = a;
-  }
+  const a = array[0];
+  array[0] = array[array.length - 1];
+  array[array.length - 1] = a;
   return array;
 };
 
