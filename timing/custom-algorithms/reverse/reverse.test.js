@@ -11,4 +11,8 @@ describe(reverse, () => {
       expect(reverse([10])).toEqual([10]);
     });
   });
+
+  describe("for arrays containing two elements", () => {
+    expect(reverse([2, 19])).toEqual([19, 2]);
+  });
 });
