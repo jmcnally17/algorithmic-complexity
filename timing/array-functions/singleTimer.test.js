@@ -20,6 +20,8 @@ describe(singleTimer, () => {
 
   it("throws an error when 1 or 2 is not given as the second parameter", () => {
     const array = [1, 2, 3, 4, 5];
-    expect(() => singleTimer(array, 10)).toThrow("Incorrect number entered for second parameter");
+    expect(() => singleTimer(array, 10)).toThrow(
+      "Incorrect number entered for second parameter"
+    );
   });
 });
