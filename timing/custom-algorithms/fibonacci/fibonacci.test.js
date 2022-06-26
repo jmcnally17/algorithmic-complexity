@@ -13,4 +13,8 @@ describe(fibonacci, () => {
   it("returns 0 and 1 for 2 fibonacci numbers", () => {
     expect(fibonacci(2)).toEqual([0, 1]);
   });
+
+  it("returns the first 3 fibonacci numbers", () => {
+    expect(fibonacci(3)).toEqual([0, 1, 1]);
+  });
 });
