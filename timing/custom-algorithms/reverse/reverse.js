@@ -4,7 +4,9 @@ const reverse = (array) => {
     array[0] = array[1];
     array[1] = a;
   } else if (array.length === 3) {
-    return [12, 4, 19];
+    const a = array[0];
+    array[0] = array[2];
+    array[2] = a;
   }
   return array;
 };
