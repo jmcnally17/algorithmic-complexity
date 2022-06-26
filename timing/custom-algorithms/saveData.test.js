@@ -2,7 +2,7 @@
 const saveData = require("./saveData");
 
 describe(saveData, () => {
-  it("saves 20 pairs of data points for plotting on a graph for timing a function", () => {
+  it("calls the callback functions to make the data points", () => {
     const mockCallbackOne = jest.fn();
     const mockCallbackTwo = jest.fn();
     const mockCallbackThree = jest.fn();
