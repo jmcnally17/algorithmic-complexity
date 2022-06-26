@@ -1,12 +1,12 @@
-const singleTimer = (array, callback) => {
+const singleTimer = (array, callback, num) => {
   let cumulative = 0;
-  for (let i = 0; i < 1000000; i++) {
+  for (let i = 0; i < num; i++) {
     const startTime = performance.now();
     callback(array);
     const endTime = performance.now();
     cumulative += endTime - startTime;
   }
-  return cumulative / 1000000;
+  return cumulative / num;
 };
 
 module.exports = singleTimer;

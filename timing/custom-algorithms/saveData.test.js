@@ -7,7 +7,7 @@ describe(saveData, () => {
     const mockCallbackTwo = jest.fn();
     const mockCallbackThree = jest.fn();
     expect(
-      saveData(mockCallbackOne, mockCallbackTwo, mockCallbackThree).length
+      saveData(mockCallbackOne, 10, mockCallbackTwo, mockCallbackThree).length
     ).toBe(20);
     expect(mockCallbackTwo).toHaveBeenCalledTimes(20);
     expect(mockCallbackThree).toHaveBeenCalledTimes(20);
