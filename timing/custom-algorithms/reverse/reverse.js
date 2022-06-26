@@ -1,5 +1,5 @@
 const reverse = (array) => {
-  return [5];
+  return array;
 };
 
 module.exports = reverse;

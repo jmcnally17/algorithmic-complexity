@@ -2,7 +2,13 @@
 const reverse = require("./reverse");
 
 describe(reverse, () => {
-  it("returns a one element array unchanged", () => {
-    expect(reverse([5])).toEqual([5]);
+  describe("for arrays containing one element", () => {
+    it("returns an array with the number 5 unchanged", () => {
+      expect(reverse([5])).toEqual([5]);
+    });
+
+    it("returns an array with the number 10 unchanged", () => {
+      expect(reverse([10])).toEqual([10]);
+    });
   });
 });
