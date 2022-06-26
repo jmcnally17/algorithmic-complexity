@@ -13,6 +13,8 @@ describe(reverse, () => {
   });
 
   describe("for arrays containing two elements", () => {
-    expect(reverse([2, 19])).toEqual([19, 2]);
+    it("returns 2 and 19 swapped around in the array", () => {
+      expect(reverse([2, 19])).toEqual([19, 2]);
+    });
   });
 });
