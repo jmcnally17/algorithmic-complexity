@@ -7,13 +7,14 @@ const duplicate = (array) => {
 };
 
 const addToCounts = (array, counts) => {
-  array.forEach((element) => {
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
     if (counts[element] === undefined) {
       counts[element] = 1;
     } else {
       counts[element]++;
     }
-  });
+  }
 };
 
 const addToRepeats = (counts, repeats) => {
