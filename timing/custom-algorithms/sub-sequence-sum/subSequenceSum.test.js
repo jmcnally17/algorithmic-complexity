@@ -2,11 +2,27 @@
 const subSequenceSum = require("./subSequenceSum");
 
 describe(subSequenceSum, () => {
-  it("returns true for an empty array and a target of 0", () => {
-    expect(subSequenceSum([], 0)).toBeTruthy();
+  describe("for an empty array passed in", () => {
+    it("returns true for a target of 0", () => {
+      expect(subSequenceSum([], 0)).toBe(true);
+    });
+
+    it("returns false for a target greater than 0", () => {
+      expect(subSequenceSum([], 5)).toBe(false);
+    });
   });
 
-  it("returns false for an empty array and a target greater than 0", () => {
-    expect(subSequenceSum([], 5)).toBeFalsy();
+  describe("for arrays containing one element", () => {
+    it("returns true for a target of 0", () => {
+      expect(subSequenceSum([4], 0)).toBe(true);
+    });
+
+    it("returns true for a target equal to the element of the array", () => {
+      expect(subSequenceSum([4], 4)).toBe(true);
+    });
+
+    it("returns false for a target that is not equal to the element of the array", () => {
+      expect(subSequenceSum([3], 2)).toBe(false);
+    });
   });
 });
