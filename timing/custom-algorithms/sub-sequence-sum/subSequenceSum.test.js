@@ -39,4 +39,18 @@ describe(subSequenceSum, () => {
       expect(subSequenceSum([3, 7], 5)).toBe(false);
     });
   });
+
+  describe("for arrays containing three elements", () => {
+    it("returns true for a target equal to the third element", () => {
+      expect(subSequenceSum([3, 7, 18], 18)).toBe(true);
+    });
+
+    it("returns true for a target equal to the sum of the second and third elements", () => {
+      expect(subSequenceSum([3, 7, 18], 25)).toBe(true);
+    });
+
+    it("returns true for a target equal to the sum of all elements", () => {
+      expect(subSequenceSum([3, 7, 18], 28)).toBe(true);
+    });
+  });
 });
