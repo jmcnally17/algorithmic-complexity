@@ -53,4 +53,9 @@ describe(subSequenceSum, () => {
       expect(subSequenceSum([3, 7, 18], 28)).toBe(true);
     });
   });
+
+  it("returns true for a long array with a subsequence sum that equals the target", () => {
+    const array = [3, 55, 1, 23, 18, 94, 101, 65, 70, 43, 23];
+    expect(subSequenceSum(array, 301)).toBe(true);
+  });
 });
