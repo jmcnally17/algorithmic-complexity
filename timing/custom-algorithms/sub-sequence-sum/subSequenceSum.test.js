@@ -25,4 +25,18 @@ describe(subSequenceSum, () => {
       expect(subSequenceSum([3], 2)).toBe(false);
     });
   });
+
+  describe("for arrays containing two elements", () => {
+    it("returns true for a target equal to the second element", () => {
+      expect(subSequenceSum([3, 7], 7)).toBe(true);
+    });
+
+    it("returns true for a target equal to the sum of both elements", () => {
+      expect(subSequenceSum([3, 7], 10)).toBe(true);
+    });
+
+    it("returns false for a target that is not equal to either element or the sum of both", () => {
+      expect(subSequenceSum([3, 7], 5)).toBe(false);
+    });
+  });
 });
