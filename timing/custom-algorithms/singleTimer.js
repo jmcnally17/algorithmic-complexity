@@ -1,8 +1,8 @@
-const singleTimer = (array, callback, num) => {
+const singleTimer = (input, callback, num, target) => {
   let cumulative = 0;
   for (let i = 0; i < num; i++) {
     const startTime = performance.now();
-    callback(array);
+    callback(input, target);
     const endTime = performance.now();
     cumulative += endTime - startTime;
   }

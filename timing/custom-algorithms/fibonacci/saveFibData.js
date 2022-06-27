@@ -1,6 +1,6 @@
-const singleFibTimer = require("./singleFibTimer");
+const singleTimer = require("../singleTimer");
 
-const saveFibData = (callbackOne, num, callbackTwo = singleFibTimer) => {
+const saveFibData = (callbackOne, num, callbackTwo = singleTimer) => {
   const data = [];
   for (let i = 1; i < 21; i++) {
     const input = 5000 * i;
