@@ -1,4 +1,4 @@
-const singleTimer = (array, numFunc) => {
+const createDataPoint = (array, numFunc) => {
   let cumulative = 0;
 
   for (let i = 0; i < 100; i++) {
@@ -19,4 +19,4 @@ const singleTimer = (array, numFunc) => {
   return cumulative / 100;
 };
 
-module.exports = singleTimer;
+module.exports = createDataPoint;

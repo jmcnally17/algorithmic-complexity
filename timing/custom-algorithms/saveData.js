@@ -1,11 +1,11 @@
 const generateArray = require("../generateArray");
-const singleTimer = require("./singleTimer");
+const createDataPoint = require("./createDataPoint");
 
 const saveData = (
   callbackOne,
   num,
   callbackTwo = generateArray,
-  callbackThree = singleTimer
+  callbackThree = createDataPoint
 ) => {
   const data = [];
   for (let i = 1; i < 21; i++) {

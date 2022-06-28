@@ -1,4 +1,4 @@
-const singleTimer = (input, callback, num, target) => {
+const createDataPoint = (input, callback, num, target) => {
   let cumulative = 0;
   for (let i = 0; i < num; i++) {
     const startTime = performance.now();
@@ -9,4 +9,4 @@ const singleTimer = (input, callback, num, target) => {
   return cumulative / num;
 };
 
-module.exports = singleTimer;
+module.exports = createDataPoint;
