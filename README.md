@@ -4,12 +4,12 @@ This project contains a timing framework for measuring the efficiency of algorit
 
 #### Custom Functions
 
-- last(array): returns the last element from the array passed in
-- reverse(array): reverses the order of the array passed in and returns the updated array
-- shuffle(array): returns a new array which contains all the elements of the original in a random order
-- duplicate(array): returns an array containing the elements that appeared more than once in the original array passed in
-- fibonacci(n): returns an array containing the first n-terms in the fibonacci sequence
-- subSequenceSum(array, target): returns true if a sub-sequence in the array passed in sums up to the target
+- `last(array)`: returns the last element from the array passed in
+- `reverse(array)`: reverses the order of the array passed in and returns the updated array
+- `shuffle(array)`: returns a new array which contains all the elements of the original in a random order
+- `duplicate(array)`: returns an array containing the elements that appeared more than once in the original array passed in
+- `fibonacci(n)`: returns an array containing the first n-terms in the fibonacci sequence
+- `subSequenceSum(array, target)`: returns true if a sub-sequence in the array passed in sums up to the target
 
 ## Graphs
 
