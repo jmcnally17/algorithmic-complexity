@@ -18,8 +18,8 @@ const addToCounts = (array, counts) => {
 };
 
 const addToRepeats = (counts, repeats) => {
-  for (const [key, value] of Object.entries(counts)) {
-    if (value > 1) repeats.push(parseInt(key));
+  for (const key in counts) {
+    if (counts[key] > 1) repeats.push(key);
   }
 };
 
