@@ -8,7 +8,7 @@ for (i = 1; i < 21; i++) {
   xValues.push(5000 * i);
 }
 
-const yValues = saveData(shuffle, 3);
+const yValues = saveData(shuffle, 500);
 
 new Chart("myChart", {
   type: "line",
