@@ -5,11 +5,11 @@ This project contains a timing framework for measuring the efficiency of algorit
 #### Custom Functions
 
 - [`last(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/last/last.js): returns the last element from the array passed in
-- `reverse(array)`: reverses the order of the array passed in and returns the updated array
-- `shuffle(array)`: returns a new array which contains all the elements of the original in a random order
-- `duplicate(array)`: returns an array containing the elements that appeared more than once in the original array passed in
-- `fibonacci(n)`: returns an array containing the first n-terms in the fibonacci sequence
-- `subSequenceSum(array, target)`: returns true if a sub-sequence in the array passed in sums up to the target
+- [`reverse(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/reverse/reverse.js): reverses the order of the array passed in and returns the updated array
+- [`shuffle(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/shuffle/shuffle.js): returns a new array which contains all the elements of the original in a random order
+- [`duplicate(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/duplicate/duplicate.js): returns an array containing the elements that appeared more than once in the original array passed in
+- [`fibonacci(n)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/fibonacci/fibonacci.js): returns an array containing the first n-terms in the fibonacci sequence
+- [`subSequenceSum(array, target)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sub-sequence-sum/subSequenceSum.js): returns true if a sub-sequence in the array passed in sums up to the target
 
 ## Graphs
 
