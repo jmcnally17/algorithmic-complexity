@@ -25,6 +25,40 @@ There are a number of helper functions that generate all the necessary data by p
 - [`fibonacci(n)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/fibonacci/fibonacci.js): returns an array containing the first n-terms in the fibonacci sequence
 - [`subSequenceSum(array, target)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sub-sequence-sum/subSequenceSum.js): returns true if a sub-sequence in the array passed in sums up to the target
 
+## Getting Started
+
+This program is run using Node.js, which is installed using NVM - Node Version Manager. So, if you haven't already, install NVM using:
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+Now, your ~/.zshrc file will need reloading:
+
+```
+source ~/.zshrc
+```
+
+Next, you can install and start using node by running:
+
+```
+nvm install node
+nvm use node
+```
+
+`nvm use node` will use the latest stable version. Once that is set up, you can now clone this repository and then install the necessary dependencies using:
+
+```
+git clone https://github.com/jmcnally17/bank-tech-test.git
+npm install
+```
+
+`npm install` must be run while in the main directory.
+
+Now you are all set up. Move onto the following section to learn how to use this program.
+
+## How To Use
+
 ## Graphs
 
 ### In Built JS Functions
@@ -62,3 +96,5 @@ There are a number of helper functions that generate all the necessary data by p
 #### subSequenceSum()
 
 ![Timing data for custom subSequenceSum()](graphs/custom-sub-sequence-sum.png)
+
+## Testing
