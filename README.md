@@ -2,6 +2,20 @@
 
 This project contains a timing framework for measuring the efficiency of algorithms. This timing framework has been applied on in built JS functions and on custom built JS functions I've made myself to test my skills of algorithm desgin.
 
+Each custom built function comes with its own feature test, unit test, JS file for plotting data using Chart.js and a HTML file for displaying the plotted graph. A package.json has also been made for each function in order to use esbuild to generate a script that is passed into the HTML file.
+
+There are a number of helper functions that generate all the necessary data by passing the relevant function in as a callback:
+
+- `generateArray(length)`
+  - Creates an array which has a length equal to the parameter passed in
+  - This function is called to create huge arrays which are passed into each function to test the time complexity
+- `createDataPoint(input, callback, numberOfMeasurements, target)`
+  - Takes an average of `numberOfMeasurements` measurements of the time taken for `callback` to act on `input`
+  - Time is measured by using `performance.now()`
+  - `target` is another parameter which is exclusively used for `subSequenceSum()`
+- `saveData(callbackOne, num)`
+  - Calls `generateArray` and `createDataPoint()` 20 times to create an array of data points for timing `callbackOne`, ready to be plotted on a graph
+
 #### Custom Functions
 
 - [`last(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/last/last.js): returns the last element from the array passed in
