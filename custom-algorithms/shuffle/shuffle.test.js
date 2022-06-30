@@ -2,10 +2,10 @@
 const shuffle = require("./shuffle");
 
 describe(shuffle, () => {
-  it("uses the callback to run Math.random to randomlty pick elements of the array to move around", () => {
+  it("calls Math.random to randomly pick elements of the array to move around", () => {
     const array = [1, 2, 3, 4, 5];
-    const mockRandom = jest.fn();
-    shuffle(array, mockRandom);
-    expect(mockRandom).toHaveBeenCalledTimes(array.length);
+    const random = jest.spyOn(Math, "random");
+    shuffle(array);
+    expect(random).toHaveBeenCalledTimes(5);
   });
 });
