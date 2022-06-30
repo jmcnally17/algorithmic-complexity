@@ -59,6 +59,19 @@ Now you are all set up. Move onto the following section to learn how to use this
 
 ## How To Use
 
+The graphs for each timed funtion can be found below. However, if you wish to run the program yourself, navigate to the folder of the function you wish to time and run:
+
+```
+npm run build
+```
+
+Then, in the same folder, open the corresponding HTML file to plot the data and view the graph in your browser. E.g. for reverse(), navigate to the [reverse folder](https://github.com/jmcnally17/algorithmic-complexity/tree/main/custom-algorithms/reverse) and run:
+
+```
+npm run build
+open reverse.html
+```
+
 ## Graphs
 
 ### In Built JS Functions
@@ -98,3 +111,5 @@ Now you are all set up. Move onto the following section to learn how to use this
 ![Timing data for custom subSequenceSum()](graphs/custom-sub-sequence-sum.png)
 
 ## Testing
+
+The Test-Driven Development (TDD) process was followed for creating every function in this project, with Jest being used as the testing framework. In order to run these tests, while in the main directory, simply run `npm test`. The test coverage can also be viewed by running `npm run test:coverage`.
