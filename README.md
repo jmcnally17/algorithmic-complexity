@@ -80,41 +80,41 @@ open reverse.html
 
 ### In Built JS Functions
 
-#### reverse() O(n)
+#### reverse(): O(n)
 
 ![Timing data for in built reverse()](graphs/in-built-reverse.png)
 
-#### sort() O(n)
+#### sort(): O(n)
 
 ![Timing data for in built sort()](graphs/in-built-sort.png)
 
 ### Custom JS Functions
 
-#### last() O(1)
+#### last(): O(1)
 
 ![Timing data for custom last()](graphs/custom-last.png)
 
-#### reverse() O(n)
+#### reverse(): O(n)
 
 ![Timing data for custom reverse()](graphs/custom-reverse.png)
 
-#### sort() O(n log n)
+#### sort(): O(n log n)
 
 ![Timin data for custom sort()](graphs/custom-sort.png)
 
-#### shuffle() (should be O(n) but difficult to tell from this graph)
+#### shuffle(): (should be O(n) but difficult to tell from this graph)
 
 ![Timing data for custom shuffle()](graphs/custom-shuffle.png)
 
-#### duplicate() O(n)
+#### duplicate(): O(n)
 
 ![Timing data for custom duplicate()](graphs/custom-duplicate.png)
 
-#### fibonacci() (Looks like O(n) but slight uncertainty with the fluctuations)
+#### fibonacci(): (Looks like O(n) but slight uncertainty with the fluctuations)
 
 ![Timing data for custom fibonacci()](graphs/custom-fibonacci.png)
 
-#### subSequenceSum() O(n<sup>2</sup>)
+#### subSequenceSum(): O(n<sup>2</sup>)
 
 ![Timing data for custom subSequenceSum()](graphs/custom-sub-sequence-sum.png)
 
