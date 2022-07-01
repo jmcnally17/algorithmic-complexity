@@ -18,12 +18,22 @@ There are a number of helper functions that generate all the necessary data by p
 
 #### Custom Functions
 
-- [`last(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/last/last.js): returns the last element from the array passed in
-- [`reverse(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/reverse/reverse.js): reverses the order of the array passed in and returns the updated array
-- [`shuffle(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/shuffle/shuffle.js): returns a new array which contains all the elements of the original in a random order
-- [`duplicate(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/duplicate/duplicate.js): returns an array containing the elements that appeared more than once in the original array passed in
-- [`fibonacci(n)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/fibonacci/fibonacci.js): returns an array containing the first n-terms in the fibonacci sequence
-- [`subSequenceSum(array, target)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sub-sequence-sum/subSequenceSum.js): returns true if a sub-sequence in the array passed in sums up to the target
+- [`last(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/last/last.js)
+  - returns the last element from the array passed in
+- [`reverse(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/reverse/reverse.js)
+  - reverses the order of the array passed in and returns the updated array
+- [`sort(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sort/sort.js)
+  - mutatest the array passed in into ascending order and returns it
+- [`shuffle(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/shuffle/shuffle.js)
+  - returns a new array which contains all the elements of the original in a random order
+- [`duplicate(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/duplicate/duplicate.js)
+  - returns an array containing the elements that appeared more than once in the original array passed in
+- [`fibonacci(n)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/fibonacci/fibonacci.js)
+  - returns an array containing the first n-terms in the fibonacci sequence
+- [`subSequenceSum(array, target)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sub-sequence-sum/subSequenceSum.js)
+  - returns true if a sub-sequence in the array passed in sums up to the target
+
+_Note: Due to a couple of slight differences in the input required for each custom function, `fibonacci()` has its own function to save its data and `sort()` has its own function to create a single data point_
 
 ## Getting Started
 
@@ -111,3 +121,5 @@ open reverse.html
 ## Testing
 
 The Test-Driven Development (TDD) process was followed for creating every function in this project, with Jest being used as the testing framework. In order to run these tests, while in the main directory, simply run `npm test`. The test coverage can also be viewed by running `npm run test:coverage`.
+
+## Issues
