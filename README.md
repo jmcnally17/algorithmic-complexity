@@ -80,7 +80,9 @@ open reverse.html
 
 ### In Built JS Functions
 
-#### reverse(): O(n)
+#### reverse()
+
+O(n)
 
 ![Timing data for in built reverse()](graphs/in-built-reverse.png)
 
