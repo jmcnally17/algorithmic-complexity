@@ -5,10 +5,10 @@ const subSequenceSum = require("./subSequenceSum");
 
 const xValues = [];
 for (i = 1; i < 21; i++) {
-  xValues.push(5000 * i);
+  xValues.push(100 * i);
 }
 
-const yValues = saveData(subSequenceSum, 1);
+const yValues = saveData(subSequenceSum, 500, 100);
 
 new Chart("myChart", {
   type: "line",

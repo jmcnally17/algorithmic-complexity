@@ -8,7 +8,7 @@ for (i = 1; i < 21; i++) {
   xValues.push(5000 * i);
 }
 
-const yValues = saveData(reverse, 1000);
+const yValues = saveData(reverse, 5000);
 
 new Chart("myChart", {
   type: "line",

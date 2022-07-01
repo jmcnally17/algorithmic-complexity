@@ -4,13 +4,14 @@ const createDataPoint = require("./createDataPoint");
 const saveData = (
   callbackOne,
   numbeOfMeasurements,
-  callbackTwo = generateArray,
-  callbackThree = createDataPoint
+  increment = 5000,
+  callbackTwo = createDataPoint,
+  callbackThree = generateArray
 ) => {
   const data = [];
   for (let i = 1; i < 21; i++) {
-    const array = callbackTwo(5000 * i);
-    const y = callbackThree(array, callbackOne, numbeOfMeasurements, 10000);
+    const array = callbackThree(increment * i);
+    const y = callbackTwo(array, callbackOne, numbeOfMeasurements, 10000);
     data.push(y);
   }
   return data;

@@ -2,6 +2,6 @@
 const saveData = require("../saveData");
 
 test("creates a set of data for the time taken for reverse() to run", () => {
-  const data = saveData(1);
+  const data = saveData(1, 1000);
   expect(data.length).toBe(20);
 });

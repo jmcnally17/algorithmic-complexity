@@ -88,6 +88,10 @@ open reverse.html
 
 ![Timing data for custom reverse()](graphs/custom-reverse.png)
 
+#### sort()
+
+![Timin data for custom sort()](graphs/custom-sort.png)
+
 #### shuffle()
 
 ![Timing data for custom shuffle()](graphs/custom-shuffle.png)

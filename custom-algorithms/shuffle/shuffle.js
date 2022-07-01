@@ -1,9 +1,10 @@
 const shuffle = (array) => {
-  const newArray = new Array(array.length);
-  for (let i = 0; i < newArray.length; i++) {
+  const newArray = [];
+  while (array.length > 0) {
     const index = Math.floor(Math.random() * array.length);
-    newArray[i] = array[index];
-    array.splice(index, 1);
+    newArray.push(array[index]);
+    array[index] = array[array.length - 1];
+    array.splice(array.length - 1, 1);
   }
   return newArray;
 };

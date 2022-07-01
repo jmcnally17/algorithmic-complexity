@@ -1,14 +1,15 @@
 /* eslint-disable no-undef */
 const Chart = require("chart.js");
+const createSortDataPoint = require("./createSortDataPoint");
 const saveData = require("../saveData");
-const duplicate = require("./duplicate");
+const sort = require("./sort");
 
 const xValues = [];
 for (i = 1; i < 21; i++) {
-  xValues.push(5000 * i);
+  xValues.push(50 * i);
 }
 
-const yValues = saveData(duplicate, 100);
+const yValues = saveData(sort, 100, 50, createSortDataPoint);
 
 new Chart("myChart", {
   type: "line",
@@ -29,7 +30,7 @@ new Chart("myChart", {
         font: {
           size: 32,
         },
-        text: "duplicate()",
+        text: "merge sort",
       },
       legend: {
         display: false,

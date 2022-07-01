@@ -2,7 +2,7 @@ const sort = (array, l = 0, r = array.length - 1) => {
   if (l >= r) {
     return array;
   }
-  let m = l + parseInt((r - l) / 2);
+  let m = l + Math.floor((r - l) / 2);
   sort(array, l, m);
   sort(array, m + 1, r);
   merge(array, l, m, r);
