@@ -86,7 +86,9 @@ O(n)
 
 ![Timing data for in built reverse()](graphs/in-built-reverse.png)
 
-#### sort(): O(n)
+#### sort()
+
+O(n)
 
 ![Timing data for in built sort()](graphs/in-built-sort.png)
 
