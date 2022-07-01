@@ -102,7 +102,7 @@ open reverse.html
 
 ![Timin data for custom sort()](graphs/custom-sort.png)
 
-#### shuffle(): (should be O(n) but difficult to tell from this graph)
+#### shuffle(): Should be O(n) but difficult to tell from this graph
 
 ![Timing data for custom shuffle()](graphs/custom-shuffle.png)
 
@@ -110,7 +110,7 @@ open reverse.html
 
 ![Timing data for custom duplicate()](graphs/custom-duplicate.png)
 
-#### fibonacci(): (Looks like O(n) but slight uncertainty with the fluctuations)
+#### fibonacci(): Looks like O(n) but slight uncertainty with the fluctuations
 
 ![Timing data for custom fibonacci()](graphs/custom-fibonacci.png)
 
