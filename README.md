@@ -80,41 +80,41 @@ open reverse.html
 
 ### In Built JS Functions
 
-#### reverse()
+#### reverse() O(n)
 
 ![Timing data for in built reverse()](graphs/in-built-reverse.png)
 
-#### sort()
+#### sort() O(n)
 
 ![Timing data for in built sort()](graphs/in-built-sort.png)
 
 ### Custom JS Functions
 
-#### last()
+#### last() O(1)
 
 ![Timing data for custom last()](graphs/custom-last.png)
 
-#### reverse()
+#### reverse() O(n)
 
 ![Timing data for custom reverse()](graphs/custom-reverse.png)
 
-#### sort()
+#### sort() O(n log n)
 
 ![Timin data for custom sort()](graphs/custom-sort.png)
 
-#### shuffle()
+#### shuffle() (should be O(n) but difficult to tell from this graph)
 
 ![Timing data for custom shuffle()](graphs/custom-shuffle.png)
 
-#### duplicate()
+#### duplicate() O(n)
 
 ![Timing data for custom duplicate()](graphs/custom-duplicate.png)
 
-#### fibonacci()
+#### fibonacci() (Looks like O(n) but slight uncertainty with the fluctuations)
 
 ![Timing data for custom fibonacci()](graphs/custom-fibonacci.png)
 
-#### subSequenceSum()
+#### subSequenceSum() O(n<sup>2</sup>)
 
 ![Timing data for custom subSequenceSum()](graphs/custom-sub-sequence-sum.png)
 
