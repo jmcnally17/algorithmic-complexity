@@ -89,7 +89,7 @@ O(n)
 
 #### sort()
 
-O(n log n)
+Appears to be O(n) but is actually O(n log n)
 
 ![Timing data for in built sort()](graphs/in-built-sort.png)
 
