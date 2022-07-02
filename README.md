@@ -89,7 +89,7 @@ O(n)
 
 #### sort()
 
-O(n)
+O(n log n)
 
 ![Timing data for in built sort()](graphs/in-built-sort.png)
 
@@ -115,7 +115,7 @@ O(n log n)
 
 #### shuffle()
 
-Should be O(n) but difficult to tell from this graph
+O(n)
 
 ![Timing data for custom shuffle()](graphs/custom-shuffle.png)
 
