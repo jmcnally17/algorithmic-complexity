@@ -6,10 +6,10 @@ const sort = require("./sort");
 
 const xValues = [];
 for (i = 1; i < 21; i++) {
-  xValues.push(50 * i);
+  xValues.push(100 * i);
 }
 
-const yValues = saveData(sort, 100, 50, createSortDataPoint);
+const yValues = saveData(sort, 100, 100, createSortDataPoint);
 
 new Chart("myChart", {
   type: "line",

@@ -10,8 +10,8 @@ const sort = (array, l = 0, r = array.length - 1) => {
 };
 
 const merge = (array, l, m, r) => {
-  let oneHalf = [...array].splice(l, m - l + 1);
-  let twoHalf = [...array].splice(m + 1, r - m);
+  let oneHalf = array.slice(l, m + 1);
+  let twoHalf = array.slice(m + 1, r + 1);
   const steps = r - l + 1;
   for (let i = 0; i < steps; i++) {
     if (oneHalf[0] < twoHalf[0] || twoHalf[0] === undefined) {
