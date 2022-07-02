@@ -13,8 +13,9 @@ There are a number of helper functions that generate all the necessary data by p
   - Takes an average of `numberOfMeasurements` measurements of the time taken for `callback` to act on `input`
   - Time is measured by using `performance.now()`
   - `target` is another parameter which is exclusively used for `subSequenceSum()`
-- `saveData(callbackOne, num)`
+- `saveData(callbackOne, numberOfMeasurements, increment)`
   - Calls `generateArray` and `createDataPoint()` 20 times to create an array of data points for timing `callbackOne`, ready to be plotted on a graph
+  - `increment` is the length of the first array being used to test the timing of `callbackOne` and is the increase to every subesquent array length afterwards
 
 #### Custom Functions
 
@@ -23,7 +24,7 @@ There are a number of helper functions that generate all the necessary data by p
 - [`reverse(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/reverse/reverse.js)
   - reverses the order of the array passed in and returns the updated array
 - [`sort(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sort/sort.js)
-  - mutatest the array passed in into ascending order and returns it
+  - mutates the array passed in into ascending order and returns it
 - [`shuffle(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/shuffle/shuffle.js)
   - returns a new array which contains all the elements of the original in a random order
 - [`duplicate(array)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/duplicate/duplicate.js)
@@ -31,7 +32,7 @@ There are a number of helper functions that generate all the necessary data by p
 - [`fibonacci(n)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/fibonacci/fibonacci.js)
   - returns an array containing the first n-terms in the fibonacci sequence
 - [`subSequenceSum(array, target)`](https://github.com/jmcnally17/algorithmic-complexity/blob/main/custom-algorithms/sub-sequence-sum/subSequenceSum.js)
-  - returns true if a sub-sequence in the array passed in sums up to the target
+  - returns true if there exists a sub-sequence in the array passed in that sums up to the target
 
 _Note: Due to a couple of slight differences in the input required for each custom function, `fibonacci()` has its own function to save its data and `sort()` has its own function to create a single data point_
 
@@ -59,7 +60,7 @@ nvm use node
 `nvm use node` will use the latest stable version. Once that is set up, you can now clone this repository and then install the necessary dependencies using:
 
 ```
-git clone https://github.com/jmcnally17/bank-tech-test.git
+git clone https://github.com/jmcnally17/algorithmic-complexity
 npm install
 ```
 
@@ -139,5 +140,3 @@ O(n<sup>2</sup>)
 ## Testing
 
 The Test-Driven Development (TDD) process was followed for creating every function in this project, with Jest being used as the testing framework. In order to run these tests, while in the main directory, simply run `npm test`. The test coverage can also be viewed by running `npm run test:coverage`.
-
-## Issues
